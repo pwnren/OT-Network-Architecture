@@ -1,5 +1,5 @@
 # Purdue Model OT Network Segmentation Architecture
-Reference OT network architecture aligned with the Purdue Model and ISA/IEC 62443 principles. Includes segmentation strategy, DMZ design, secure remote access, tiered administration, and Layer 2/3 design patterns to support secure, highly available industrial control system environments.
+Reference OT network architecture aligned with the Purdue Model. Includes segmentation strategy, DMZ design, secure remote access, tiered administration, and Layer 2/3 design patterns to support secure, highly available industrial control system environments.
 
 The objective is to demonstrate:
 - Secure OT/IT segmentation
