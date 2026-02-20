@@ -52,7 +52,7 @@ ping <gateway>
 show ip route
 traceroute <destination>
 show ip interface brief
-'''
+```
 
 ## Layer 4 – Transport (TCP/UDP)
 Port-based communication
@@ -68,7 +68,7 @@ Testing tools:
 telnet <ip> <port>
 Test-NetConnection (PowerShell)
 netstat -an
-'''
+```
 
 ## Layer 5 – Session
 Maintains session state
