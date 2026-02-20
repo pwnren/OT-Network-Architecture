@@ -13,12 +13,24 @@ The objective is to demonstrate:
 This project reflects real-world industrial and manufacturing network architecture patterns.
 
 ## Architecture Summary
-Level	Function	       VLAN    per production area
-- 5	Enterprise IT	      10	  10.10.10.0/24   (254 usable IPs)
-- 3	Operations	        20	  10.10.20.0/24   (254 usable IPs)
-- 3.5	Industrial DMZ	  35	  10.10.35.0/26   (62 usable IPs)
-- 2	HMI / Supervisory  	40	  10.10.40.0/27   (30 usable IPs)
-- 1	PLC / Control	50	  50    10.10.50.0/28   (14 Usable IPs)
+| Level | Function              | VLAN | Subnet            | Usable IPs |
+|-------|-----------------------|------|------------------ |------------|
+| 5     | Enterprise IT         | 10   | 10.10.10.0/24     | 254        |
+| 3     | Operations            | 20   | 10.10.20.0/24     | 254        |
+| 3.5   | Industrial DMZ        | 35   | 10.10.35.0/26     | 62         |
+| 2     | HMI / Supervisory     | 40   | 10.10.40.0/27     | 30         |
+| 1     | PLC / Control         | 50   | 10.10.50.0/28     | 14         |
+
+- Each production area receives its own VLAN and subnet
+- Segmentation aligns with Purdue Model layering
+- Subnet sizing follows device density requirements per level
+- Default gateway resides at the routed boundary (Layer 3 SVI / firewall)
+- Inter-zone traffic is controlled via ACLs/firewall policy
+- No direct IT-to-OT routing without defined security policy
+
+
+---
+
 
 ## Security Design Principles
 - Default-deny between Enterprise IT and OT zones
