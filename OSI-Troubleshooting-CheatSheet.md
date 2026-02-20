@@ -47,11 +47,12 @@ Validate:
 - VRF assignment correct
 
 Useful commands:
-
+```bash
 ping <gateway>
 show ip route
 traceroute <destination>
 show ip interface brief
+'''
 
 ## Layer 4 – Transport (TCP/UDP)
 Port-based communication
@@ -63,10 +64,11 @@ Common causes:
 - Wrong service port
 
 Testing tools:
-
+```bash
 telnet <ip> <port>
 Test-NetConnection (PowerShell)
 netstat -an
+'''
 
 ## Layer 5 – Session
 Maintains session state
