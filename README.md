@@ -15,11 +15,11 @@ This project reflects real-world industrial and manufacturing network architectu
 ## Architecture Summary
 | Level | Function              | VLAN | Subnet            | Usable IPs |
 |-------|-----------------------|------|------------------ |------------|
-| 5     | Enterprise IT         | 10   | 10.10.10.0/24     | 254        |
+| 5     | Enterprise IT         | 10   | 10.10.10.0/23     | 510        |
 | 3     | Operations            | 20   | 10.10.20.0/24     | 254        |
 | 3.5   | Industrial DMZ        | 35   | 10.10.35.0/26     | 62         |
 | 2     | HMI / Supervisory     | 40   | 10.10.40.0/27     | 30         |
-| 1     | PLC / Control         | 50   | 10.10.50.0/28     | 14         |
+| 1     | PLC / Control         | 50   | 10.10.50.0/27     | 30         |
 
 - Each production area receives its own VLAN and subnet
 - Segmentation aligns with Purdue Model layering
