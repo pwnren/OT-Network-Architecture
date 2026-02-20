@@ -117,25 +117,68 @@ nslookup
 dig
 curl -v https://google.com
 
-# Quick OSI Isolation Flow
+# Troubleshooting OSI Layer
+| Test                | Likely Layer |
+| ------------------- | ------------ |
+| Cannot ping device  | L1–L3        |
+| Cannot ping gateway | L2–L3        |
+| Cannot ping DNS     | L3           |
+| DNS won’t resolve   | L7           |
+| Port closed         | L4           |
+| SSL error           | L6           |
+| Login/session issue | L5–L7        |
 
-1. Ping device IP
-- If no → Layer 1–3 issue
 
-2. Ping default gateway
-- If no → Likely Layer 2 or Layer 3
+# Troubleshooting Decision Tree
 
-3. Ping DNS server
-- If yes → Layer 3 confirmed
-
-4. Resolve DNS name
-- If no → Layer 7 (DNS service)
-
-5. Port test fails (example 443)
-- Layer 4 issue
-
-6. HTTPS loads but SSL error
-- Layer 6 issue
-
-7. Login fails or app slow
-- Layer 5–7 issue
+  START
+                   │
+                   ▼
+        1️⃣  Ping Device IP?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ No                  ✅ Yes
+  L1–L3 Issue          Continue ▼
+                             
+                   2️⃣ Ping Default Gateway?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ No                  ✅ Yes
+   Likely L2/L3        Continue ▼
+                             
+                   3️⃣ Ping DNS Server?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ No                  ✅ Yes
+     L3 Issue           Continue ▼
+                             
+                   4️⃣ Resolve DNS Name?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ No                  ✅ Yes
+  L7 (DNS Service)     Continue ▼
+                             
+                   5️⃣ Port Test (e.g., 443)?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ Fails              ✅ Open
+     L4 Issue           Continue ▼
+                             
+                   6️⃣ HTTPS Loads?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ SSL Error           ✅ Yes
+       L6 Issue         Continue ▼
+                             
+                   7️⃣ Login Works?
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+      ❌ No                 ✅ Yes
+    L5–L7 Issue        Application OK
