@@ -8,7 +8,6 @@ Transmits raw bits over physical medium
 - Verify link light
 - Confirm speed/duplex match
 - Use cable tester
-- - Replace patch cable if unsure
 
 Common issues:
 - Bad cable
@@ -29,10 +28,12 @@ Common causes:
 
 Useful commands:
 
+```bash
 show vlan brief
 show interfaces trunk
 show spanning-tree
 show mac address-table
+```
 
 ## Layer 3 – Network
 IP addressing, routing, gateway logic
