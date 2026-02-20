@@ -13,12 +13,12 @@ The objective is to demonstrate:
 This project reflects real-world industrial and manufacturing network architecture patterns.
 
 ## Architecture Summary
-Level	Function	VLAN	Subnet
-5	Enterprise IT	10	10.10.10.0/24
-3	Operations	20	10.10.20.0/24
-3.5	Industrial DMZ	35	10.10.35.0/24
-2	HMI / Supervisory	40	10.10.40.0/24
-1	PLC / Control	50	10.10.50.0/24
+Level	Function	VLAN/subnet per production area
+- 5	Enterprise IT	10	10.10.10.0/24  (254 usable IPs)
+- 3	Operations	20	10.10.20.0/24    (254 usable IPs)
+- 3.5	Industrial DMZ	35	10.10.35.0/26 (62 usable IPs)
+- 2	HMI / Supervisory	40	10.10.40.0/27 (30 usable IPs)
+- 1	PLC / Control	50	10.10.50.0/28 (14 Usable IPs)
 
 ## Security Design Principles
 - Default-deny between Enterprise IT and OT zones
