@@ -47,11 +47,13 @@ Level	Function	VLAN	Subnet
 - SNMPv3 recommended for production
 - Logging and monitoring hooks for SIEM integration
 
-🔄 Example Traffic Flow Policy
-Source	Destination	Allowed	Notes
-IT	PLC	❌	Blocked
-IT	IDMZ Jump Host	✅	HTTPS only
-IDMZ	HMI	✅	RDP only
-HMI	PLC	✅	Modbus/TCP (502)
-PLC	Internet	❌	Blocked
-OT	Domain Controller	⚠ Controlled	Authentication only
+## Example Traffic Flow Policy
+
+| Source | Destination | Allowed | Notes |
+|--------|------------|---------|-------|
+| IT | PLC | ❌ | Blocked |
+| IT | IDMZ Jump Host | ✅ | HTTPS only |
+| IDMZ | HMI | ✅ | RDP only |
+| HMI | PLC | ✅ | Modbus/TCP (502) |
+| PLC | Internet | ❌ | Blocked |
+| OT | Domain Controller | ⚠ | Controlled authentication only |
