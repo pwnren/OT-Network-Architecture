@@ -115,7 +115,7 @@ Commands:
 
 nslookup
 dig
-curl -v https://site
+curl -v https://google.com
 
 # Quick OSI Isolation Flow
 
