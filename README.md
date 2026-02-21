@@ -15,7 +15,7 @@ This project reflects real-world industrial and manufacturing network architectu
 ## Architecture Summary
 | Level | Function              | VLAN | Subnet            | Usable IPs |
 |-------|-----------------------|------|------------------ |------------|
-| 5     | Enterprise IT         | 10   | 10.10.10.0/23     | 510        |
+| 5     | Enterprise IT         | 10   | 10.10.10.0/24     | 254        |
 | 3     | Operations            | 20   | 10.10.20.0/24     | 254        |
 | 3.5   | Industrial DMZ        | 35   | 10.10.35.0/26     | 62         |
 | 2     | HMI / Supervisory     | 40   | 10.10.40.0/27     | 30         |
