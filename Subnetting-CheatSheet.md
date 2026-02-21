@@ -1,4 +1,5 @@
-Power-of-Two Method + OT / Purdue Model Alignment
+# Power-of-Two Method + OT / Purdue Model Alignment
+
 🔹 The /24 Anchor Method
 
 /24 = 256 total IP addresses
