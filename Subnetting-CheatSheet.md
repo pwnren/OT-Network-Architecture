@@ -18,7 +18,7 @@ Subnetting = **Powers of 2**.
 
 ## 📊 Host Capacity Reference Table
 
-### ➗ Divide by 2 (More Specific Subnets)
+### ➗ Divide by 2 (Smaller Networks)
 
 | Prefix | Subnet Mask       | Total IPs | Usable Hosts |
 |-------:|-------------------|----------:|-------------:|
