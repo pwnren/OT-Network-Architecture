@@ -1,6 +1,6 @@
 # Power-of-Two Method + OT 
 
-🔹 The /24 Anchor Method
+🔹 The /24 Method
 
 `/24 = 256` total IP addresses
 
