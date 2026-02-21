@@ -28,7 +28,6 @@ Prefix	Total IPs	Usable Hosts
 /30	4	2
 /31	2	2 (Point-to-Point)
 /32	1	1
-
 ✖ Multiply by 2 (Larger Networks)
 Prefix	Total IPs
 /24	256
@@ -43,12 +42,10 @@ Prefix	Total IPs
 
 🔥 Block Size Method (Fast Mental Subnetting)
 
-Formula
-
+Formula:
 Block Size = 256 − Interesting Octet
 
 Example:
-
 /26 = 255.255.255.192
 256 - 192 = 64
 
@@ -57,8 +54,6 @@ Subnet increments:
 64
 128
 192
-
-That’s your subnet map.
 
 ⚡ Powers of Two (Memorize This Row)
 256 128 64 32 16 8 4 2 1
@@ -81,7 +76,7 @@ Example:
 32 − 27 = 5
 2^5 = 32 addresses
 
-🏭 OT-Specific Subnet Design
+# 🏭 OT-Specific Subnet Design
 Level 5 – Enterprise IT
 
 Typical Size: /22 or /23
