@@ -1,4 +1,4 @@
-# Power-of-Two Method + OT / Purdue Model Alignment
+# Power-of-Two Method + OT 
 
 🔹 The /24 Anchor Method
 
