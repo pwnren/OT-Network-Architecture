@@ -28,6 +28,22 @@ This project reflects real-world industrial and manufacturing network architectu
 - Inter zone traffic is controlled via ACLs/firewall policy
 - No direct IT to OT routing without defined security policy
 
+---
+
+## 🔐 Supporting Security Baseline
+
+This architecture is reinforced by a hardened Cisco IOS configuration baseline designed specifically for Operational Technology environments.
+
+➡️ [Cisco IOS Secure Baseline – OT Focused](https://github.com/pwnren/Cisco-IOS-Secure-Baseline-Hardening)
+
+The baseline includes:
+
+- Management plane protection
+- TACACS+ AAA enforcement
+- SSHv2 & SNMPv3 hardening
+- Layer 2 protection controls (BPDU Guard, Root Guard, UDLD)
+- VRF segmentation support
+- Defense in depth configuration standards
 
 ---
 
