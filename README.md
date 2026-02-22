@@ -45,7 +45,7 @@ This project reflects real-world industrial and manufacturing network architectu
 - Rapid-PVST for loop prevention
 - BPDU Guard, Root Guard, and Loop Guard enforcement
 - LACP-based EtherChannel for uplink resiliency
-- VRF separation between IT, IDMZ, and OT domains
+- VRF separation between BUSINESS, OPERATIONS, IDMZ, and OT domains
 - Static routing or firewall mediated inter-zone routing
 - IP SLA tracking for failover validation (future enhancement)
 
