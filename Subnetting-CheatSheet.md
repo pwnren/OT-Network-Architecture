@@ -107,6 +107,9 @@ Everything else is derived between these boundaries.
 ## Level 3 – Operations / Industrial DMZ
 
 **Typical Size:** `/26` or `/27`
+**Example Capacity:**
+- `/26` = 64 IPs  
+- `/27` = 32 IPs  
 
 **Why:**
 - Historians
@@ -121,7 +124,10 @@ Everything else is derived between these boundaries.
 ## Level 2 – HMI / Supervisory
 
 **Typical Size:** `/27` or `/28`
-
+**Example Capacity:**
+- `/27` = 32 IPs  
+- `/28` = 16 IPs
+  
 **Why:**
 - HMIs
 - Engineering workstations
@@ -134,7 +140,6 @@ Everything else is derived between these boundaries.
 ## Level 1 – PLC / Control Devices
 
 **Typical Size:** `/28` or `/29`
-
 **Example Capacity:**
 - `/28` = 16 IPs (14 usable)
 - `/29` = 8 IPs (6 usable)
