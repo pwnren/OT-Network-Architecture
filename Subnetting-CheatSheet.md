@@ -1,4 +1,4 @@
-# Power-of-Two Method + OT 
+# Power of Two Method + OT 
 
 🔹 The /24 Method
 
