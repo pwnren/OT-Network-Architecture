@@ -4,11 +4,11 @@ Reference OT network architecture aligned with the Purdue Model. Includes segmen
 The objective is to demonstrate:
 - Secure OT/IT segmentation
 - Industrial DMZ (Level 3.5) implementation
-- VLAN and VRF-based separation
+- VLAN and VRF separation
 - Controlled access enforcement between levels
-- Least-privilege communication flows
-- OT-focused network hardening practices
-- High-availability design considerations
+- Least privilege communication flows
+- OT focused network hardening practices
+- High availability design considerations
 
 This project reflects real-world industrial and manufacturing network architecture patterns.
 
@@ -25,8 +25,8 @@ This project reflects real-world industrial and manufacturing network architectu
 - Segmentation aligns with Purdue Model layering
 - Subnet sizing follows device density requirements per level
 - Default gateway resides at the routed boundary (Layer 3 SVI / firewall)
-- Inter-zone traffic is controlled via ACLs/firewall policy
-- No direct IT-to-OT routing without defined security policy
+- Inter zone traffic is controlled via ACLs/firewall policy
+- No direct IT to OT routing without defined security policy
 
 
 ---
@@ -35,22 +35,22 @@ This project reflects real-world industrial and manufacturing network architectu
 ## Security Design Principles
 - Default-deny between Enterprise IT and OT zones
 - No direct Level 1 to Level 5 communication
-- All IT-to-OT administrative access traverses Level 3.5 (Industrial DMZ)
-- East-West traffic minimized within OT zones
+- All IT to OT administrative access traverses Level 3.5 (Industrial DMZ)
+- East to West traffic minimized within OT zones
 - Segmentation enforced using VLANs, VRFs, ACLs, and firewall policies
 - Tiered administration via designated jump hosts
 - Management plane isolation from control traffic
 
 ## Layer 2 & Layer 3 Design Patterns
-- Rapid-PVST for loop prevention
+- Rapid PVST for loop prevention
 - BPDU Guard, Root Guard, and Loop Guard enforcement
-- LACP-based EtherChannel for uplink resiliency
+- LACP based EtherChannel for uplink resiliency
 - VRF separation between BUSINESS, OPERATIONS, IDMZ, and OT domains
 - Static routing or firewall mediated inter-zone routing
 - IP SLA tracking for failover validation (future enhancement)
 
 ##  Key Controls Implemented
-- VLAN-based segmentation aligned to Purdue levels
+- VLAN based segmentation aligned to Purdue levels
 - VRF separation for domain isolation
 - Inter-VLAN ACL enforcement
 - Port security on access layer
