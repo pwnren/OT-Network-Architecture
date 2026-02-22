@@ -155,20 +155,20 @@ Everything else is derived between these boundaries.
 **Use Cases:**
 - Router uplinks
 - Firewall transit VLANs
-- Core-to-distribution links
+- Core to distribution links
 - OT zone boundaries
 
-`/31` recommended for point-to-point links (RFC 3021)
+`/31` recommended for point-to-point links 
 
 ---
 
 ## 🔐 OT Design Principles
 
-- Right-size VLANs (do not oversize Level 1/2)
+- Right size VLANs (do not oversize Level 1/2)
 - Smaller broadcast domains reduce outage scope
 - Align subnets with trust boundaries
 - Enforce policy at Layer 3 or firewall boundary
-- Default-deny between Purdue levels
+- Default deny between Purdue levels
 - Separate management plane where possible
 
 ---
