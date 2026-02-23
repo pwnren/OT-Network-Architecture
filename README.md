@@ -30,7 +30,7 @@ This project reflects real-world industrial and manufacturing network architectu
 
 ---
 
-## 🔐 Supporting Security Baseline
+## Supporting Security Baseline
 
 This architecture is reinforced by a hardened Cisco IOS configuration baseline designed specifically for Operational Technology environments.
 
@@ -57,7 +57,7 @@ The baseline includes:
 - Tiered administration via designated jump hosts
 - Management plane isolation from control traffic
 
-## Layer 2 & Layer 3 Design Patterns
+## Layer 2 & 3 Design 
 - Rapid PVST for loop prevention
 - BPDU Guard, Root Guard, and Loop Guard enforcement
 - LACP based EtherChannel for uplink resiliency
