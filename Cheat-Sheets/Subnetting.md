@@ -1,4 +1,4 @@
-# Power of Two Method Subnetting 
+# Power of Two Method 
 
 🔹 The /24 Method
 
