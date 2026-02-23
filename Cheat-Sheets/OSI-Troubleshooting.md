@@ -36,7 +36,7 @@ show mac address-table
 ```
 
 ## Layer 3 – Network
-IP addressing, routing, gateway logic
+IP addressing, routing, gateway
 
 Validate:
 - Correct IP address
@@ -55,7 +55,7 @@ show ip interface brief
 ```
 
 ## Layer 4 – Transport (TCP/UDP)
-Port-based communication
+Port based communication
 
 Common causes:
 - TCP/UDP port not listening
@@ -66,7 +66,7 @@ Common causes:
 Testing tools:
 ```bash
 telnet <ip> <port>
-Test-NetConnection (PowerShell)
+Test-netconnection (PowerShell)
 netstat -an
 ```
 
