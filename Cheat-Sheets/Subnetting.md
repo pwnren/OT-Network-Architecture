@@ -47,7 +47,7 @@ Subnetting = **Powers of 2**.
 | /16 | 255.255.0.0     | 65536 |
 ---
 
-## 🔥 Block Size Method (Fast Mental Subnetting)
+## 🔥 Block Size Method
 
 **Formula:** `Block Size = 256 − Interesting Octet`
 
@@ -67,7 +67,7 @@ All subnet math comes from this sequence.
 
 ---
 
-## 🧱 Octet Boundaries (Know Cold)
+## 🧱 Octet Boundaries 
 
 | Prefix | Subnet Mask |
 |-------:|-------------|
@@ -174,6 +174,6 @@ Everything else is derived between these boundaries.
 - Align subnets with trust boundaries
 - Enforce policy at Layer 3 or firewall boundary
 - Default deny between Purdue levels
-- Separate management plane where possible
+- Separate management where possible
 
 ---
