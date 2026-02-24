@@ -1,6 +1,6 @@
 Network Troubleshooting by OSI Model (Layer 1–7)
 
-A structured troubleshooting methodology aligned with the OSI model to isolate faults quickly in enterprise and OT environments.
+A structured troubleshooting methodology aligned with the OSI model to isolate faults quickly in enterprise environments.
 
 ## Layer 1 – Physical
 Transmits raw bits over physical medium
