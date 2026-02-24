@@ -1,0 +1,44 @@
+## IEC 62443 Zones & Conduits, Security Levels
+
+### Zones & Conduits Mapping
+
+IEC 62443 defines zones as logical or physical groupings of assets with similar security requirements and conduits as controlled communication paths between zones
+
+### Zones in This Architecture
+
+| Purdue Level | Zone Name | Description |
+|---|---|---|
+| Level 5 | Enterprise Zone | Corporate IT systems, identity services |
+| Level 3.5 | Industrial DMZ | Brokered communications between IT and OT |
+| Level 3 | Operations Zone | OT application servers, historians |
+| Level 2 | Supervisory Zone | HMI, SCADA supervisory systems |
+| Level 1 | Basic Control Zone | PLCs and controllers |
+| Level 0 | Process Zone | Sensors and actuators |
+
+### Conduits
+
+Conduits are enforced through:
+
+- Firewalls between Purdue levels
+- ACL enforcement on Layer 3 boundaries
+- VRF segmentation
+- Jump hosts for administrative access
+- Protocol allow-listing
+- Default-deny communication policies
+
+Only explicitly required communications are permitted between zones
+
+---
+
+### Security Levels (SL)
+
+IEC 62443 defines Security Levels (SL1–SL4) based on threat capability
+
+| Security Level | Description | Application in Architecture |
+|---|---|---|
+| SL1 | Protection against casual or accidental misuse | Applied to Level 0–1 networks |
+| SL2 | Protection against intentional violation using simple means | Level 2 supervisory systems |
+| SL3 | Protection against sophisticated attackers | Level 3 and IDMZ |
+| SL4 | Protection against highly sophisticated attackers | Rare in most ICS deployments |
+
+Security controls increase moving from Level 0 → Level 5 boundaries
