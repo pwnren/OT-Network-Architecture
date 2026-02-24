@@ -1,4 +1,4 @@
-# Purdue Model OT Network Segmentation Architecture
+# Purdue Model OT Network Architecture
 Reference OT network architecture aligned with the Purdue Model. Includes segmentation strategy, DMZ design, secure remote access, tiered administration, and Layer 2/3 design patterns to support secure, highly available industrial control system environments.
 
 The objective is to demonstrate:
