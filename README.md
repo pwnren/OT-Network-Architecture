@@ -10,9 +10,9 @@ The objective is to demonstrate:
 - OT focused network hardening practices
 - High availability design considerations
 
-This project reflects real-world industrial and manufacturing network architecture patterns.
+This project reflects industrial and manufacturing OT networks utilizing the Purdue Model.
 
-## Architecture Summary
+## OT Summary
 | Level | Function              | VLAN | Subnet            | Usable IPs |
 |-------|-----------------------|------|------------------ |------------|
 | 5     | Enterprise IT         | 10   | 10.10.10.0/24     | 254        |
@@ -30,9 +30,20 @@ This project reflects real-world industrial and manufacturing network architectu
 
 ---
 
-## Supporting Security Baseline
+## Supporting Documentation
 
-This architecture is reinforced by a hardened Cisco IOS configuration baseline designed specifically for Operational Technology environments.
+➡️ [MITRE D3FEND OT](docs/D3FEND-OT.md) — OT Environments Defensive Techniques
+
+➡️ [OT Protocol Troubleshooting](docs/OT-Protocol-Troubleshooting.md) — Industrial protocol diagnostics/validation checks  
+
+➡️ [OSI Layer Troubleshooting](docs/OSI-Troubleshooting.md) — OSI Network Troubleshooting Methodology  
+
+
+---
+
+## Cisco IOS Security Baseline
+
+This architecture is hardened Cisco IOS configuration baseline designed specifically for Operational Technology environments.
 
 ➡️ [Cisco IOS Secure Baseline – OT Focused](https://github.com/pwnren/Cisco-IOS-Secure-Baseline-Hardening)
 
