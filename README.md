@@ -1,5 +1,5 @@
 # Purdue Model OT Network Architecture
-Reference OT network aligned with the Purdue Model. Includes segmentation, DMZ design, secure remote access, tiered administration, and Layer 2/3 design patterns to support secure, highly available industrial control system environments.
+Reference OT networking aligned with the Purdue Model guidence. Includes segmentation, DMZ design, secure remote access, tiered administration, and Layer 2/3 design patterns to support secure, highly available industrial control system environments.
 
 The objective is to demonstrate:
 - Secure OT/IT segmentation
