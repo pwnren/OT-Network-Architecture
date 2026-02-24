@@ -1,4 +1,4 @@
-## NIST SP 800-82 Rev 3 — OT Security Guidance
+## NIST SP 800-82 Rev 3: OT Security Guidance
 
 ### Key Guidance Applied
 
